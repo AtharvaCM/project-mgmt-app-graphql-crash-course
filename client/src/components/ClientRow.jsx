@@ -12,7 +12,7 @@ const ClientRow = ({ client }) => {
       cache.writeQuery({
         query: GET_CLIENTS,
         data: {
-          clients: client.filter((client) => client.id !== deleteClient.id),
+          clients: clients.filter((client) => client.id !== deleteClient.id),
         },
       });
     },
